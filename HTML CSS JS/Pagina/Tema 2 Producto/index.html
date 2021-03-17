@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tema 2</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="banner">
+      <header>
+        <a href="#" class="logo">Your Logo</a>
+        <div class="toggle" onclick="toggle();"></div>
+      </header>
+      <div class="content">
+        <div class="contentBx">
+          <h2>Future on<br />Your Hand</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus
+            vitae sed iure aperiam quia, magnam, blanditiis, nesciunt architecto
+            ad exercitationem vero repudiandae a reiciendis corrupti. Sit ipsa
+            reiciendis minus perferendis.
+          </p>
+          <a href="#">Buy Now</a>
+        </div>
+        <div class="imgBx">
+          <img src="img/watch.png" />
+        </div>
+      </div>
+      <ul class="sci">
+          <li><a href="#"><img src="img/facebook.png"></a></li>
+          <li><a href="#"><img src="img/twitter.png"></a></li>
+          <li><a href="#"><img src="img/instagram.png"></a></li>
+      </ul>
+      <ul class="menu">
+          <li><a href="#home" onclick="toggle();">Home</a></li>
+          <li><a href="#about" onclick="toggle();">About</a></li>
+          <li><a href="#services" onclick="toggle();">Products</a></li>
+          <li><a href="#store" onclick="toggle();">Store</a></li>
+          <li><a href="#contact" onclick="toggle();">Contact</a></li>
+      </ul>
+    </section>
+    
+    <section class="about" id="about"><h2>About</h2></section>
+    <section class="services" id="services"><h2>Products and Services</h2></section>
+    <section class="store" id="store"><h2>Store</h2></section>
+    <section class="contact" id="contact"><h2>Contact</h2></section>
+    
+    <script type="text/javascript">
+      function toggle() {
+        const toggle = document.querySelector(".toggle");
+        const banner = document.querySelector(".banner");
+        toggle.classList.toggle("active");
+        banner.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>

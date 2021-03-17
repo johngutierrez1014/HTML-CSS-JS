@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header id="home"> 
+        <div class="logo">Your Logo</div>
+        <img src="images/bg.jpg" class="bg">
+        <div class="contenti">
+            <h2>Let's Make<br>Something Creative</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vestibulum tortor felis, eu mattis magna
+                gravida nec. Pellentesque odio turpis, porta id lacus non, ornare finibus ante. Aliquam quis molestie
+                erat. Vivamus non quam gravida, commodo metus sit amet, iaculis eros. Quisque varius tempor tellus, nec
+                mollis elit. Nam hendrerit enim lorem, id pulvinar ex rutrum ac. Maecenas quis orci eu sem interdum
+                hendrerit vitae a nisi. Ut congue ligula varius, congue mauris id, commodo libero. Nulla facilisi. Sed
+                sollicitudin nisl mi, tristique lacinia ipsum vehicula non. Nullam luctus ac odio in semper.</p>
+            <a href="#">Get Started</a>
+        </div>
+    </header>
+    <!-- menu -->
+    <div class="menuToggle" onclick="toggleMenu();"></div>
+    <div class="navigation">
+        <ul>
+            <li><a href="#home" onclick="toggleMenu();">Home</a></li>
+            <li><a href="#about" onclick="toggleMenu();">About</a></li>
+            <li><a href="#work" onclick="toggleMenu();">Work</a></li>
+            <li><a href="#team" onclick="toggleMenu();">Team</a></li>
+            <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+        </ul>
+        <div class="socialBar">
+            <ul>
+                <li><a href="#"><img src="images/facebook.png"></a></li>
+                <li><a href="#"><img src="images/twitter.png"></a></li>
+                <li><a href="#"><img src="images/instagram.png"></a></li>
+            </ul>
+            <a href="#" class="emailBx"><img src="images/email.png"></a>
+        </div>
+    </div>
+
+   <section class="about" id="about">
+        <div class="heading">
+            <h2>About Me</h2>
+        </div>
+        <div class="content">
+            <div class="contentBx w50">
+                <h3>Lorem ipsum dolor sit amet consectetur</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At est nostrum, recusandae harum unde
+                    facilis, nam deleniti aut incidunt laboriosam id magni nihil. Beatae, quod possimus. Suscipit
+                    sit rem ad. <br><br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat rerum
+                    sequi dolor eum ex veritatis. Amet animi dolore veritatis cum corrupti exercitationem expedita
+                    delectus mollitia minima voluptates, fugit cumque facere. </p>
+            </div>
+            <div class="w50">
+                <img src="images/img1.jpg" class="img">
+            </div>
+        </div>
+    </section>
+    <section class="work" id="work">
+        <div class="heading">
+            <h2>Our Latest Work</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="content">
+            <div class="workBx">
+                <img src="images/product1.jpg">
+            </div>
+            <div class="workBx">
+                <img src="images/product2.jpg">
+            </div>
+            <div class="workBx">
+                <img src="images/product3.jpg">
+            </div>
+            <div class="workBx">
+                <img src="images/product4.jpg">
+            </div>
+        </div>
+        <div class="heading">
+            <a href="#" class="btn">View More</a>
+        </div>
+    </section>
+    <section class="team" id="team">
+        <div class="heading">
+            <h2>Team</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="content">
+            <div class="teamBx">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam temporibus nesciunt in quae atque earum vel ducimus quidem tempora. Ut magnam quasi deserunt veniam impedit maxime recusandae iste dolor facere.</p>
+                <h3>Someone Famous<br><span>Creative Designer</span></h3>
+            </div>
+            <div class="teamBx">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam temporibus nesciunt in quae atque earum vel ducimus quidem tempora. Ut magnam quasi deserunt veniam impedit maxime recusandae iste dolor facere.</p>
+                <h3>Someone Famous<br><span>Creative Designer</span></h3>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <div class="heading white">
+            <h2>Contact Us</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="content">
+            <div class="contactInfo">
+                <h3>Contact Info</h3>
+                <div class="contactInfoBx">
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-map-marker"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Address</h3>
+                            <p>4671 Sugar Camp Road,<br>Owatonna, Minnesota<br>55060</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-phone"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Phone</h3>
+                            <p>507-475-6094</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-envelope-o"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Email</h3>
+                            <p>yourmail@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="formBx">
+                <form>
+                    <h3>Message Me</h3>
+                    <input type="text" name="" placeholder="Full Name">
+                    <input type="email" name="" placeholder="Email">
+                    <textarea placeholder="Your Message"></textarea>
+                    <input type="submit" value="Send">
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <script type="text/javascript">
+        function toggleMenu(){
+            var menuToggle = document.querySelector('.menuToggle');
+            var navigation = document.querySelector('.navigation');
+            menuToggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }    
+    </script>
+</body>
+
+</html>
